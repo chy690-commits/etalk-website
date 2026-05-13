@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import Navbar from './components/Navbar';
 import { Phone } from 'lucide-react';
 import Hero from './components/Hero';
@@ -9,6 +10,10 @@ import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
 
 export default function App() {
+  useEffect(() => {
+    document.title = "영어 말하기 대회 전문 화상영어 이토크";
+  }, []);
+
   return (
     <div className="min-h-screen font-sans">
       <Navbar />
